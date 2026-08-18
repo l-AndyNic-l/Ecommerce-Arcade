@@ -1,0 +1,108 @@
+body {
+    background-color: beige;
+    margin: 0px;
+    font-family: 'Press Start 2P', 'Arcade Classic', sans-serif;
+}
+
+header {
+    background-color: rgb(115, 36, 189);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header .logo:nth-child(1) {
+    flex: 0 0 20%;
+}
+
+header .navbar-main:nth-child(2) {
+    flex: 0 0 60%;
+}
+
+header .navbar-second:nth-child(3) {
+    flex: 0 0 20%;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+.navbar-main ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-main ul li a {
+    color: white;
+    font-size: 20;
+    font-weight: 550;
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navbar-main ul li a:hover {
+    color: rgb(219, 0, 0);
+}
+
+.navbar-main ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: aqua;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.navbar-main ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar-main ul li #activo {
+    color: red;
+}
+
+.navbar-main ul li #activo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.navbar-second ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-second ul li a {
+    color: white;
+    margin: 15px;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.navbar-second ul li a:hover {
+    color: red;
+    font-size: 22px;
+}
+
+.navbar-second ul li #activo {
+    color: red;
+    font-size: 22px;
+}
