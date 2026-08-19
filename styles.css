@@ -1,5 +1,4 @@
 body {
-    background-color: beige;
     margin: 0px;
     font-family: 'Press Start 2P', 'Arcade Classic', sans-serif;
 }
@@ -8,7 +7,11 @@ header {
     background-color: rgb(115, 36, 189);
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
     padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 header .logo:nth-child(1) {
@@ -105,4 +108,153 @@ header .logo img {
 .navbar-second ul li #activo {
     color: red;
     font-size: 22px;
+}
+
+section {
+    margin: 50px;
+}
+
+.proximamente {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proximamente img {
+    width: 30%;
+}
+
+footer {
+    background-color: #141414;
+    display: inline-block;
+    width: 100%;
+    bottom: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .informacion {
+    padding: 20px;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: start;
+    align-items: start;
+    padding-top: 50px;
+}
+
+footer .descripcion {
+    display: block;
+    padding: 0 30px;
+}
+
+footer .descripcion .logo {
+    text-align: center;
+}
+
+footer .descripcion .logo img {
+    width: 200px;
+}
+
+footer .descripcion .texto {
+    text-align: center;
+}
+
+footer .descripcion .texto p {
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 15px;
+    padding: 0 50px;
+}
+
+footer .navegacion {
+    display: block;
+}
+
+footer .navegacion h2 {
+    color: white;
+    display: inline-block;
+    border-bottom: 2px solid aqua;
+    margin: 0;
+}
+
+footer .navegacion .filas {
+    display: flex;
+}
+
+footer .navegacion .filas ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .navegacion .filas ul li {
+    margin: 10px 30px 10px 0px;
+}
+
+footer .navegacion .filas ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.747);
+    transition: 0.3s;
+}
+
+footer .navegacion .filas ul li a:hover {
+    color: red;
+}
+
+footer .direccion {
+    display: block;
+}
+
+footer .direccion h2 {
+    color: white;
+    display: inline-block;
+    border-bottom: 2px solid aqua;
+    margin: 0;
+}
+
+footer .direccion .filas {
+    display: flex;
+}
+
+footer .direccion .filas ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .direccion .filas ul li {
+    margin: 10px 30px 20px 0px;
+}
+
+footer .direccion .filas ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.747);
+    transition: 0.3s;
+}
+
+footer .direccion .filas ul li a:hover {
+    color: red;
+}
+
+footer .direccion .filas ul .redes i {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.747);
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+footer .direccion .filas ul .redes i:hover {
+    color: red;
+}
+
+footer .derechos-autor {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+footer .derechos-autor p {
+    color: white;
 }
