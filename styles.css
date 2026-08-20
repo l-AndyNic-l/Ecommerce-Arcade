@@ -126,19 +126,63 @@ section {
     width: 30%;
 }
 
+.presentacion {
+    background-image: url(./img/163924-retrojuegos-arcade-gamer-mame-dispositivo_electronico-1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 69px;
+    height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.presentacion::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.presentacion .pre {
+    width: 75%;
+    position: relative;
+}
+
+.presentacion .pre h2 {
+    text-align: left;
+    font-weight: 500px;
+    font-size: 40px;
+    color: white;
+}
+
+.presentacion .pre h2::after {
+    content: "";
+    display: block;
+    width: 21%;
+    border-bottom: 3px solid aqua;
+}
+
+.presentacion .pre p {
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.712);
+}
 
 .catalogo-arcades {
-    padding-top: 120px; 
+    margin-top: 80px; 
     margin-bottom: 40px;
 }
 
 .catalogo-arcades h2 {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin: 20px;
 }
-
 
 .contenedor-arcades {
     display: grid;
@@ -146,7 +190,6 @@ section {
     gap: 20px; 
     padding: 20px;
 }
-
 
 .tarjeta-arcade {
     position: relative !important;
