@@ -5,66 +5,56 @@ let numero;
 
 function agregar(valor) {
 
-    if (pantalla.value == 0) {
+    if (pantalla.value == 0 || pantalla.value == "Error División 0") {
         pantalla.value = valor;
 
     } else {
         pantalla.value += valor;
-    }
+    };
 
-}
+};
 
 function limpiar() {
     pantalla.value = 0;
-}
+};
 
-function sumar(operacion) {
-    numero = pantalla.value;
-    identificador = operacion;
-    limpiar();
-}
+function operacion(operador) {
 
-function restar(operacion) {
-    numero = pantalla.value;
-    identificador = operacion;
-    limpiar();
-}
+    if(pantalla.value != "Error División 0" ) {
+        numero = pantalla.value;
+        identificador = operador;
 
-function dividir(operacion) {
-    numero = pantalla.value;
-    identificador = operacion;
-    limpiar();
-}
+        limpiar();
+    };
 
-function multiplicar(operacion) {
-    numero = pantalla.value;
-    identificador = operacion;
-    limpiar();
-}
-
-
+};
 
 function calcular() {
-   
+        
     if (identificador == '+') {
         pantalla.value = Number(numero) + Number(pantalla.value);
-        identificador = '';
-    } 
+        return identificador = '';
+    };
 
     if(identificador == '-') {
         pantalla.value = Number(numero) - Number(pantalla.value);
-        identificador = '';
-    }
+        return identificador = '';
+    };
 
     if(identificador == '/') {
-        pantalla.value = Number(numero) / Number(pantalla.value);
-        identificador = '';
-    }
+        if(Number(numero) > 0 & Number(pantalla.value) > 0) {
+            pantalla.value = Number(numero) / Number(pantalla.value);
+
+        } else {
+            pantalla.value = "Error División 0";
+        }
+
+        return identificador = '';
+    };
 
     if(identificador == '*') {
         pantalla.value = Number(numero) * Number(pantalla.value);
-        identificador = '';
-    }
+        return identificador = '';
+    };
 
-
-}
+};
