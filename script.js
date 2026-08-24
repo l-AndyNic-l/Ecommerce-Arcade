@@ -1,6 +1,5 @@
-
 let pantalla = document.getElementById("pantalla");
-let identificador;
+let calculo;
 let numero;
 
 function agregar(valor) {
@@ -22,7 +21,7 @@ function operacion(operador) {
 
     if(pantalla.value != "Error División 0" ) {
         numero = pantalla.value;
-        identificador = operador;
+        calculo = operador;
 
         limpiar();
     };
@@ -31,30 +30,29 @@ function operacion(operador) {
 
 function calcular() {
         
-    if (identificador == '+') {
+    if (calculo == '+') {
         pantalla.value = Number(numero) + Number(pantalla.value);
-        return identificador = '';
+        return calculo = '';
     };
 
-    if(identificador == '-') {
+    if(calculo == '-') {
         pantalla.value = Number(numero) - Number(pantalla.value);
-        return identificador = '';
+        return calculo = '';
     };
 
-    if(identificador == '/') {
-        if(Number(numero) > 0 & Number(pantalla.value) > 0) {
+    if(calculo == '/') {
+        if (Number(pantalla.value) !== 0) {
             pantalla.value = Number(numero) / Number(pantalla.value);
-
         } else {
             pantalla.value = "Error División 0";
         }
+        return calculo = '';
+    }
+    
 
-        return identificador = '';
-    };
-
-    if(identificador == '*') {
+    if(calculo == '*') {
         pantalla.value = Number(numero) * Number(pantalla.value);
-        return identificador = '';
+        return calculo = '';
     };
 
 };
