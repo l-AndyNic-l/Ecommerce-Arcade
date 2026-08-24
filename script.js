@@ -20,7 +20,7 @@ function limpiar() {
 
 function operacion(operador) {
 
-    if(pantalla.value != "Error División 0" ) {
+    if(pantalla.value != "División Inválida" ) {
         numero = pantalla.value;
         identificador = operador;
 
@@ -46,7 +46,7 @@ function calcular() {
             pantalla.value = Number(numero) / Number(pantalla.value);
 
         } else {
-            pantalla.value = "Error División 0";
+            pantalla.value = "División Inválida";
         }
 
         return identificador = '';
