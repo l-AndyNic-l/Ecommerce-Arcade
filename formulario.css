@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(250, 241, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+fieldset {
+    padding: 20px; 
+}
+
+legend {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+
+.datos-personales {
+    margin-bottom: 20px;
+    width: 95%;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 0 0 10px #cfcfcf;
+}
+
+input::placeholder {
+  color: #b3b3b3;
+}
+
+.form-venta {
+    width: 100%;
+    text-align: center;
+}
+
+.form-venta label {
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-venta input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 0 0 10px #cfcfcf;
+}
+
+.form-venta select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 0 0 10px #cfcfcf;
+}
+
+.form-venta button {
+    margin: 20px;
+    font-size: 1.4rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 0 0 10px #cfcfcf;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-venta button:hover {
+    background-color: #b3b3b3;
+    color: aliceblue;
+}
+
+.botonera {
+    cursor: pointer;
+}

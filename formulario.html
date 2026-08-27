@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="formulario.css" >
 </head>
 <body>
     <form id="contacto">
         <fieldset>
-            <legend>Ingrese datos de contacto</legend>
-            <label>Nombre Completo:</label>
-            <input type="text" placeholder="Ingrese su nombre" id="nombre" required>
+            <legend>Ingrese Datos de Contacto</legend>
+            <label> <i class="fa-regular fa-circle-user"></i> Nombre Completo: </label>
+            <input class="datos-personales" type="text" placeholder="Ingrese su nombre" id="nombre" required>
 
             <br />
 
-            <label>RUT:</label>
-            <input type="text" placeholder="Formato 212345678-9" id="rut" required>
+            <label> <i class="fa-regular fa-address-card"></i> RUT: </label>
+            <input class="datos-personales" type="text" placeholder="Ingrese RUT formato 212345678-9" id="rut" required>
 
             <br />
 
-            <label>Email:</label>
-            <input type="email" id="correo" required>
+            <label> <i class="fa-regular fa-envelope"></i> Email: </label>
+            <input class="datos-personales" type="email" id="correo" placeholder="Ingrese su correo" required>
 
             <br />
 
-            <label>Telefono:</label>
-            <input type="tel" id="telefono" required>
+            <label> <i class="fa-solid fa-mobile-screen"></i> Telefono: </label>
+            <input class="datos-personales" type="tel" id="telefono" placeholder="Ingrese su telefono" required>
 
             <br />
 
-            <label>Fecha de Nacimiento:</label>
-            <input type="date" id="fenac" required>
+            <label> <i class="fa-regular fa-calendar"></i> Fecha de Nacimiento: </label>
+            <input class="datos-personales" type="date" id="fenac" required>
 
+            <hr />
             <br />
 
-            <label>Selecciona un producto:</label>
-            <select id="productos">
-                <option value="">Seleccione un producto</option>
-                <option value="prod_1">Papas</option>
-                <option value="prod_2">Chocolate</option>
-                <option value="prod_3">Popcorn</option>
-                <option value="prod_4">Bebidas</option>
-            </select>
+            <div class="form-venta">
+                <label>Selecciona un producto: </label>
+                <select id="productos">
+                    <option value="">Seleccione un producto</option>
+                    <option value="prod_1">Papas</option>
+                    <option value="prod_2">Chocolate</option>
+                    <option value="prod_3">Popcorn</option>
+                    <option value="prod_4">Bebidas</option>
+                </select>
 
-            <br />
+                <br />
 
-            <label>Cantidad:</label>
-            <input type="number" min="10" max="99">
+                <label>Cantidad: </label>
+                <input type="number" min="10" max="99">
 
-            <br />
+                <br />
 
-            <label>Credito:</label>
-            <input type="radio" name="Pago" id="credito">
+                <label>Credito: </label>
+                <input class="botonera" type="radio" name="Pago" id="credito">
             
-            <label>Devito:</label>
-            <input type="radio" name="Pago" id="debito">
+                <label>Devito: </label>
+                <input class="botonera" type="radio" name="Pago" id="debito">
 
-            <label>Tarjeta:</label>
-            <input type="radio" name="Pago" id="tarjeta" >
+                <label>Tarjeta: </label>
+                <input class="botonera" type="radio" name="Pago" id="tarjeta" >
 
-            <br />
+                <br />
 
-            <button type="submit">Aceptar</button>
+                <button type="submit">Aceptar</button>
+            </div>
 
         </fieldset>
     </form>
