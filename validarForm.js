@@ -18,7 +18,7 @@ formulario.addEventListener("submit",function(event){
         return
     };
 
-    if(!/^[^\s@]+@(gmail|duocuc|outlook)\.com|\.cl$/.test(correo.value)){
+    if(!/^[^\s@]+@(gmail|outlook)\.com|(duocuc)\.cl$/.test(correo.value)){
         alert("Debe ingresar un correo válido");
         correo.focus();
         return
